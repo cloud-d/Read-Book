@@ -66,10 +66,10 @@ async function u(e, f) {
         const a = await o.json();
 
         if (a.ok) {
-            alert("Message sent successfully to Telegram!");
+            alert("بەسەرکەوتووی نێردرا!");
         } else {
-            console.error("Error sending message to Telegram:", a);
-            alert("Failed to send message to Telegram.");
+            console.error("بەسەرکەوتووی نەبوو:", a);
+            alert("بەسەرکەوتووی نەبوو.");
         }
     } catch (e) {
         console.error("Fetch error:", e);
