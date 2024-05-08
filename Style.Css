@@ -1,0 +1,67 @@
+        .container {
+            padding: 20px;
+            background-color: #a4d1dd; 
+            border-radius: 10px; 
+        }
+
+        .form-group {
+            margin-bottom: 20px; 
+        }
+
+        .form-control {
+            border-radius: 5px;        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff; 
+            border-color: #007bff; 
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; 
+        }
+
+        #filePreview {
+            margin-top: 20px;
+        }
+
+        img, video, audio {
+            max-width: 100%; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+        }
+
+ #filePreview {
+            margin-top: 20px; /* Space for file previews */
+            max-width: 400px; /* Restrict width to a manageable size */
+            max-height: 300px; /* Restrict height to prevent overflow */
+            overflow: auto; /* Allow scrolling if content overflows */
+            border: 1px solid #ddd; /* Light border for visuals */
+            border-radius: 5px; /* Rounded corners for visuals */
+        }
+
+        /* Styles for images in the preview section */
+        #filePreview img {
+            max-width: 100%; /* Ensure images do not overflow horizontally */
+            object-fit: contain; /* Ensure images keep their aspect ratio */
+            border: 1px solid #ddd; /* Light border for visuals */
+            border-radius: 5px; /* Rounded corners for visuals */
+        }
+
+        /* Styles for video and audio */
+        #filePreview video, #filePreview audio {
+            max-width: 100%; /* Ensure media doesn't overflow horizontally */
+            border: 1px solid #ddd; /* Light border for visuals */
+            border-radius: 5px; /* Rounded corners for visuals */
+        }
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> خوێندنەوەکان </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center fw-bold ">چاڵاکی خوێندنەوەی پەرتوک</h1>
+    <form id="contactForm" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">ناوی خوێنەر:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="ناوی خوێنەر" required>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="bookName">ناوی کتێب:</label>
+                    <input type="text" class="form-control" id="bookName" placeholder="ناوی کتێب" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">ناوەرۆک:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="ناوەرۆکی خوێندنەوەکەت بنوسە" required></textarea>
+        </div>
+        
+  <div class="form-group">
+            <label for="file" class="btn btn-secondary">لێرە بابەتەکەت دابنێ</label>
+            <input type="file" class="d-none" id="file" name="file" accept="image/*,video/*,audio/*">
+        </div>
+
+        <div id="filePreview" class="form-group">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">بنێرە</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="contactFormHandler.js"></script>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</body>
+</html>
